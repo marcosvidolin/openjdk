@@ -6,4 +6,4 @@ ENV TZ=America/Sao_Paulo
 
 RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 
-ENTRYPOINT bash
+ENTRYPOINT date
